@@ -1,0 +1,10 @@
+print("                Wellcome to tip calculator")
+Amount = input("Enter your bill amount ")
+Tip = input("Enter your % of tip ")
+people = input("total number of friends ")
+amount_int = int(Amount)
+tip_int = int(Tip)
+people_int = int(people)
+net_amount = amount_int*(tip_int/100)
+each_pay = net_amount/people_int
+print(f"Each of you have to pay {round(each_pay,2)} $")
